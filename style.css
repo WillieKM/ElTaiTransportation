@@ -43,6 +43,41 @@ color:white;
 background:#0B5C75;
 color:white;
 padding:60px 20px 30px 20px;
+border-top:4px solid #F97316;
+}
+
+.footer-column p{
+line-height:1.6;
+opacity:0.9;
+}
+
+.footer-contact{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.footer-contact a{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+text-decoration:none;
+}
+
+.footer-contact a:hover{
+opacity:0.8;
+text-decoration:underline;
+}
+
+.footer-contact svg{
+flex-shrink:0;
+width:18px;
+height:18px;
+color:#F97316;
 }
 
 .footer-container{
@@ -290,6 +325,109 @@ text-align:center;
 .about-content{
 max-width:750px;
 line-height:1.7;
+}
+
+/* ABOUT PAGE */
+.hero-stats{
+display:flex;
+gap:50px;
+justify-content:center;
+margin-top:28px;
+flex-wrap:wrap;
+}
+
+.hero-stat{
+text-align:center;
+}
+
+.hero-stat strong{
+display:block;
+font-size:28px;
+color:#F97316;
+}
+
+.hero-stat span{
+font-size:13px;
+opacity:0.85;
+letter-spacing:0.3px;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1.1fr 0.9fr;
+gap:50px;
+align-items:center;
+}
+
+.about-grid p + p{
+margin-top:16px;
+}
+
+.about-grid img{
+width:100%;
+display:block;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.section-heading{
+text-align:center;
+max-width:650px;
+margin:0 auto 40px;
+}
+
+.section-heading h2{
+color:#0B5C75;
+margin-bottom:10px;
+}
+
+.icon-circle{
+width:56px;
+height:56px;
+border-radius:50%;
+background:#0B5C75;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 16px;
+}
+
+.icon-circle svg{
+width:26px;
+height:26px;
+color:white;
+}
+
+.mission-banner{
+background:#0B5C75;
+color:white;
+padding:70px 20px;
+text-align:center;
+}
+
+.mission-banner .icon-circle{
+background:#F97316;
+}
+
+.mission-banner blockquote{
+max-width:700px;
+margin:20px auto 0;
+font-size:22px;
+font-style:italic;
+line-height:1.55;
+}
+
+.center-text{
+text-align:center;
+}
+
+@media (max-width:768px){
+.about-grid{
+grid-template-columns:1fr;
+}
+.about-grid .about-image{
+order:-1;
+}
 }
 /* BOOKING FORM */
 .booking-section {
